@@ -1,0 +1,16 @@
+h1 {color:hsl(79, 8%, 61%);
+    font-size: 56px;
+    text-align:center;
+    font-family: Helvetica;
+}
+
+#arriba {
+    font-weight: bold;
+    font: size 40px;
+}
+
+.subtitulos {
+    font-size: 45px;
+    text-decoration: underline;
+    color: rgb(10, 56, 10);
+}

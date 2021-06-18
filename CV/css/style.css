@@ -1,0 +1,38 @@
+#tipo_de_texto {
+                font-family: Times New Roman;
+                text-align: center;
+                }
+
+header img#imagenCV {height: 100px; width: 80px;}
+
+h1 {
+    font-size: 35px; 
+    color:#005677; 
+    font-style: normal; 
+    font-weight: bold;
+    background-color: #C4C4C4;
+    }
+
+h2 {
+    font-size: 20px;
+    color:#005677;
+    font-style: normal;
+    font-weight: bold;
+    background-color: #C4C4C4;
+    margin-left: 25%;
+    margin-right: 25%;
+    text-align: justify;
+    }
+
+/* a la derecha del selector tiene que estar la etiqueta donde quiero modificar valores, a la derecha, la etiqueta global que lo contiene */
+main section div ul li .texto_en_negrita_y_en_cursiva {font-weight: bold; font-style: italic;}
+main section div ul li .texto_en_negrita {font-weight: bold}
+
+br {
+    font-size:100px;
+    }
+
+#footer {
+        background-color: #005677;
+        color: rgb(245, 240, 240);
+        }
