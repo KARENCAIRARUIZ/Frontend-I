@@ -1,0 +1,44 @@
+header {color: rgb(255,255,255)}
+
+.fondonegro {background-color: rgb(0,0,0);}
+
+.fondonaranja {background-color: orange;}
+
+.letrablanca {color:rgb(255,255,255)}
+
+.centrado {text-align: center;}
+
+.fondoimagen {
+                background-image: url('../Imagenes/fondoimagen.png');
+                background-position: center;
+                background-attachment: fixed;
+                background-size: cover;
+
+
+            }
+
+
+h1 {font-size: 50px;}
+.h2 {font-size: 40px}
+.h3 {font-size: 30PX;}
+.h4 {font-size: 25px;}
+.comederos {background-color: yellow;color:white; font-weight: bold; font-size: 20px;}
+
+.fondoclaro {background: rgb(237, 238, 232);}
+
+.precio {color:rgb(224, 201, 65)}
+
+
+.fondomarron {background-color:rgb(97, 67, 67);}
+
+.letragris {color: grey}
+
+/*.icono a{font-size: 30px;}*/
+
+#final {background-color: orange; color: rgb(255,255,255);}
+
+section.centrado div.icono {font-size: 30px;}
+
+i {font-size: 40px; color: blue}
+
+input {font-size: 25px; width: 500px;}

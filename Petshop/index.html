@@ -1,20 +1,21 @@
 <!DOCTYPE html>
 <html lang="es">
-    <!--Texto de pestaña-->
-    <head>
-        <meta charset="UTF-8">
-        <title>Petshop</title>
-    </head>
 
-    <body>
-        <!--CONTENIDO PARA CABECERA-->
-        <header>
-        <!-- Barra superior en color negro-->
-        <ul type="none">
+<head>
+    <meta charset="UTF-8">
+    <title>Petshop</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css">
+    <link rel="stylesheet" href="Css/styles.css">
+
+</head>
+
+<body>
+    <header>
+        <ul type="none" class="fondonegro">
             <li>Grandes ofertas en comederos</li>
             <li>
                 <nav>
-                    <ul type="disc">
+                    <ul type="none">
                         <li>Español</li>
                         <li>$ ARG</li>
                     </ul>
@@ -22,34 +23,34 @@
             </li>
         </ul>
 
-        <!--Barra de menú principal en color naaranja-->
-        <ul type="none">
+        <ul type="none" class="fondonaranja">
             <li id="arriba">
                 <img src="Imagenes/ImagenlogoPetshop.PNG" alt="Logo Petshop">
             </li>
             <li>
                 <nav>
                     <ul type="disc">
-                        <li><a href="https://www.afip.gob.ar/monotributo/categorias.asp">Categorías</a></li>
-                        <li><a href="https://www.linguee.es/ingles-espanol/traduccion/pets.html">Pets</a></li>
-                        <li><a href="https://es.wikipedia.org/wiki/Nosotros_(pel%C3%ADcula)">Nosotros</a></li>
-                        <li><a href="https://www.soluciones.equifax.com.ar/contactenos/">Contactenos</a></li>
+                        <li><a class="letrablanca" href="https://www.afip.gob.ar/monotributo/categorias.asp">Categorías</a></li>
+                        <li><a class="letrablanca" href="https://www.linguee.es/ingles-espanol/traduccion/pets.html">Pets</a></li>
+                        <li><a class="letrablanca" href="https://es.wikipedia.org/wiki/Nosotros_(pel%C3%ADcula)">Nosotros</a></li>
+                        <li><a class="letrablanca" href="https://www.soluciones.equifax.com.ar/contactenos/">Contactenos</a></li>
                     </ul>
                 </nav>
             </li>
         </ul>
-        </header>
+    </header>
 
         <!--CONTENIDO PARA ÁREA PRINCIPAL-->
         <!--Sección banner-->
         
-        <section>
-            <div>
-                <img src="/Imagenes/bowl-and-pet-daities-on-green-background 1.png" alt="IMAGEN PRINCIPAL">
-                <h2>¡Es un placer tenerte aquí!</h2>
-                <p>¡Comederos es descuentos!</p>
-                <button>Comederos</button><!--ETIQUETA DE LINEA-->
-            </div>
+        <section class="centrado">
+                <!--<img src="/Imagenes/bowl-and-pet-daities-on-green-background 1.png" alt="IMAGEN PRINCIPAL">-->
+            <h2 class="h2">¡Es un placer tenerte aquí!</h2>
+            <div class="fondoimagen">
+                <h3 class="h3">¡Comederos es descuentos!</h3>
+                <button class="comederos">Comederos</button><!--ETIQUETA DE LINEA-->
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </div>    
         </section>
         <!--Sección productos-->
         
@@ -58,28 +59,28 @@
         <span>Comederos</span><span>-</span><span>Accesorios</span><span>-</span><span>Comida</span>
 
         <!--CARDS-->
-        <section>
+        <section class="fondoclaro">
             <div>
                 <img src="/Imagenes/churrasquito.png" alt="Imagen del churrasquito">
                 <p>Juguete Churrasquito</p>
-                <p>$150</p>
+                <p class="precio">$150</p>
             </div>
 
             <div>
                 <img src="/Imagenes/comedero.png" alt="Imagen del comedero">
                 <p>Comedero para perro</p>
-                <p>$250</p>
+                <p class="precio">$250</p>
             </div>
 
             <div>
                 <img src="/Imagenes/Huesito.png" alt="Imagen del huesito">
                 <p>Juguete Huesito</p>
-                <p>$650</p>
+                <p class="precio">$650</p>
             </div>
         </section>
 
-        <section>
-            <h3>Contáctenos</h3>
+        <section class="centrado">
+            <h3 class="h3">Contáctenos</h3>
             <div>
                 <input type="text" placeholder="Nombre y apellido">
             </div>
@@ -93,33 +94,33 @@
                 <button>Enviar</button>
         </section>
         
-        <section>
-            <img src="Imagenes/logomensajes.PNG" alt="logo mensajes">
-            <h4>Suscribete para mas novedades</h4>
+        <section class="centrado">
+            <i class="far fa-envelope"></i>
+            <h4 class="h4">Suscribete para mas novedades</h4>
             <div>
                 <input type="text" placeholder="Ingresa tu correo electrónico">
             </div>
-            <div>
+            <h4 class="h4">
                 <button>Suscribete</button>
-            </div>
+            </h4>
         </section>
         <br>
         <!--Seccion datos de Petshop-->
 
-        <section>
+        <section class="fondomarron">
             <div>
-                <img src="/Imagenes/logoubicacion.PNG" alt="logo localidad">
-                <h4>Localidad</h4>
-                <span>Calle</span><span>-</span><span>Provincia</span>
+                <i class="far fa-map-marker-alt"></i>
+                <h4 class="letrablanca">Localidad</h4>
+                <p class="letragris">Calle - Provincia</p>
             </div>
             <div>
-                <img src="/Imagenes/logollamada.PNG" alt="logo teléfono">
-                <h4>Teléfono</h4>
-                <p>Número de teléfono</p>
+                <i class="far fa-phone-square-alt"></i>
+                <h4 class="letrablanca">Teléfono</h4>
+                <p class="letragris">Número de teléfono</p>
             </div>
-                <img src="/Imagenes/logocorreoelectronico.PNG" alt="logo correo electrónico">
-                <h4>Correo electrónico</h4>
-                <p>Dirección de correo</p>
+            <i class="far fa-mail-bulk"></i>
+                <h4 class="letrablanca">Correo electrónico</h4>
+                <p class="letragris">Dirección de correo</p>
             <div>
                 
             </div>
@@ -129,10 +130,15 @@
             </a>
         </section>
         <!--CONTENIDO PIE DE PÁGINA-->
-        <footer>
-            <div align="center">Todos los derechos reservados Front End</div>
+        <footer class="centrado">
+            <section>
+                <h4 class="h4">Seguinos en nuestras redes sociales</h4>
+                <a href="https://www.instagram.com/loquemasticatumascota/?hl=es"><i class="fab fa-instagram"></i></a><span>  </span>
+                <a href="https://www.facebook.com/loquemasticatumascota"><i class="fab fa-facebook"></i></a><span>  </span>
+                <a href="https://twitter.com/asambleapetshop?lang=es"><i class="fab fa-twitter-square"></i></a>
+            </section>
+            <p id="final">Todos los derechos reservados Front End</p>
         </footer>
-
     </body>
 
 </html>
