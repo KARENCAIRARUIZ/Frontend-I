@@ -1,0 +1,38 @@
+*{margin: 0px; padding: 0px;}
+
+#descuentos {
+            background-color: #1CD1B0;
+            font-size: 30px;
+            padding: 10px 903px 10px 10px;
+            }
+
+#heroes {
+        background-color: #00669F;
+        font-size: 50px;
+        padding: 28px 868px 26px 28px;
+    }
+
+.cards {
+        margin: 155px 32px 155px 32px;
+        height: 529px;
+        width: 300px;
+        text-align: center;
+        }
+
+.cora {padding: 15.88px 249px 150.88px 21px;}
+
+
+.bordegris {background-color: #F3F3F3;}
+
+h2 {text-align: center;}
+
+.vermas {background-color: #00669F; color: rgb(255,255,255);}
+
+
+/* falta darle foma de tarjeta a las cards*/
+
+footer { 
+        background-color: #00669F; 
+        color: rgb(255,255,255);
+        padding: 16px 671px 16px 16px;
+        }
