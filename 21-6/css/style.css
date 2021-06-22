@@ -1,38 +1,97 @@
 *{margin: 0px; padding: 0px;}
 
+/*parte del header*/
 #descuentos {
-            background-color: #1CD1B0;
-            font-size: 30px;
-            padding: 10px 903px 10px 10px;
-            }
+                background-color: #1CD1B0;
+                font-size: 30px;
+                padding: 10px 903px 10px 10px;
+        }
 
 #heroes {
         background-color: #00669F;
         font-size: 50px;
         padding: 28px 868px 26px 28px;
-    }
+        }
+/*parte del header*/
 
+/*posicion y medidas de todas las cards*/
 .cards {
-        margin: 155px 32px 155px 32px;
+        margin: 100px 32px;
         height: 529px;
         width: 300px;
         text-align: center;
+        position: relative;
+        bottom: 205px;
+        }
+/*posicion y medida de todas las cards*/
+
+/*propiedades del primer batman*/
+#batman1 {
+        position: absolute;
+        top: 200px;
+        left: 200px;
+        }
+/*propiedades del primer batman*/
+
+/*propiedades de harley*/
+#harley {position: absolute;
+        left: 760px;
+        top: 200px;
+        }
+/*propiedades de harley*/
+
+/*propiedades del segundo batman*/
+#batman2 {
+        position: absolute;
+        top: 200px;
+        right: 200px;
+}
+/*propiedades del segundo batman*/
+
+/*posiciones del contenido de las cards*/
+.corazon {
+        position : relative;
+        bottom: 270px;
+        right: 45px;   
+}
+
+.cara {
+        position: relative;
+        bottom: 65px;
+        right:13px;
+        z-index: 100;
         }
 
-.cora {padding: 15.88px 249px 150.88px 21px;}
+.fondoclaro {
+                background-color: #F3F3F3;
+                position: absolute;
+                top: 191px;
+                padding-bottom: 20px;
+
+        }
+
+h2 {
+        text-align: center;
+        padding-top: 74px;
+        padding-bottom: 10px;
+}
+
+p {padding-bottom: 40px;}
+
+.vermas {
+        background-color: #00669F; 
+        color: rgb(255,255,255);
+        padding: 10px 20px;}
 
 
-.bordegris {background-color: #F3F3F3;}
+/*propiedaes del contenido de las cards*/
 
-h2 {text-align: center;}
-
-.vermas {background-color: #00669F; color: rgb(255,255,255);}
-
-
-/* falta darle foma de tarjeta a las cards*/
-
+/*derechos reservados*/
 footer { 
         background-color: #00669F; 
         color: rgb(255,255,255);
         padding: 16px 671px 16px 16px;
+        position: relative;
+        top:800px;
         }
+/*derechos reservados*/
