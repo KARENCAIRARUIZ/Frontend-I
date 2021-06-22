@@ -1,0 +1,24 @@
+body {background-image: url('/Imagenes/fondobody.png'); 
+    background-repeat: no-repeat;
+    background-size: cover;}
+header {font-family: 'Kalam', cursive;}
+main {font-family: 'Kalam', cursive} 
+footer {font-family: 'Kalam', cursive; text-align: center;}
+.centrado {text-align: center;}
+h1 {font-size: 60px;}
+h2 {font-size: 40px;}
+h3 {font-size: 30px;}
+p {font-size: 30px;}
+p.centrado {font-family: 'Indie Flower', cursive; text-align: right; font-size: 14px;}
+.letranegrita {font-weight: bold;}
+i {font-size: 40px;}
+#HTML {color: rgb(255, 117, 5)}
+#CSS {color:rgb(67, 142, 204)}
+#drive {color:rgb(218, 214, 8)}
+#excel {color:rgb(12, 112, 45)}
+#powerpoint {color: rgb(212, 99, 99);}
+#word {color:rgb(35, 2, 223)}
+#wsp {color:rgb(2, 243, 82)}
+#telegram {color:rgb(67, 142, 204)}
+#gmail {color: rgb(255, 0, 0)}
+#github {color: black}
