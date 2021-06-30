@@ -1,35 +1,256 @@
-header {color: rgb(255,255,255)}
-.fondonegro {background-color: rgb(0,0,0);}
-
-.fondonaranja {background-color: orange;}
-
-.letrablanca {color:rgb(255,255,255)}
-
-.centrado {text-align: center;}
-
-.fondoimagen {
-            background-image: url('../Imagenes/fondoimagen.png');
-            background-position: center;
-            background-attachment: fixed;
-            background-size: cover;
+/*FONDO NEGRO*/
+#fondonegro {display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: rgb(0,0,0);
+            width: 100%;
+            color:rgb(255, 255, 255);
             }
 
-h1 {font-size: 50px;}
-.h2 {font-size: 40px}
-.h3 {font-size: 30PX;}
-.h4 {font-size: 25px;}
-.comederos {background-color: yellow;color:white; font-weight: bold; font-size: 20px;}
+#arribaizquierda {padding: 2px 2px 2px 90px;}
 
-.fondoclaro {background: rgb(237, 238, 232);}
+#arribaderecha {display: flex;
+                flex-direction: row;
+                padding-right: 60px;
+                }
+
+#arribaderecha li {padding-left: 30px;}
+
+/*FONDO NARANJA*/
+#fondonaranja { display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: orange;
+                width: 100%;}
+
+#logofrontarriba {  width: 334px; 
+                    height: 46px;
+                    padding: 30px;}
+
+#menudeopciones {display: flex;
+                flex-direction: row;
+                justify-content: center;
+                padding: 30px;
+                color:rgb(255, 255, 255);}
+
+#menudeopciones li{padding-left: 20px;}
+
+#fondoimagenprincipal { display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-end;
+                        background-image: url('/Imagenes/fondoimagen.png');
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        /*background-attachment: fixed;*/
+                        text-align: center;
+                        padding-right: 40px;
+                    }
+
+#placerconocerte {  font-weight: normal;
+                    font-size: 30px;
+                    padding: 2px;
+                    margin-top: 160px;
+                    background-color: rgb(255, 255, 255);
+                    width: 320px;
+                }
+#comederosendescuentos {font-weight: normal; 
+                        text-align: center;
+                        font-size: 20px;}
+
+#comederos {font-size: 15px;
+            width: 120px;
+            background-color: orange;
+            color:rgb(255, 255, 255);
+            padding: 6px;
+            border: orange;
+            margin-bottom: 160px;}
+
+/*PRODUCTOS DESTACADOS*/
+
+#productos_destacados { display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin-top: 20px;
+                        margin-bottom: 20px;;}
+
+#patita {width: 67px;
+        height: 71px;}
+
+h1 {font-size: 40px;;}
+
+#opciones {color:rgb(71, 70, 70)}
+
+
+/*CARDS*/
+
+#cards {display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        text-align: center;
+        }
+
+#churrasquito { display: flex;
+                flex-direction: column;
+                width: 265px;
+                height: 265px;
+                background-image: url('/Imagenes/churrasquito.png');
+                justify-content: flex-end;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+
+#comedero { display: flex;
+                flex-direction: column;
+                width: 265px;
+                height: 265px;
+                background-image: url('/Imagenes/comedero.png');
+                justify-content: flex-end;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
+
+#huesito { display: flex;
+                flex-direction: column;
+                width: 265px;
+                height: 265px;
+                background-image: url('/Imagenes/Huesito.png');
+                justify-content: flex-end;
+                padding-bottom: 20px;
+                padding-top: 20px;
+            }
 
 .precio {color:rgb(224, 201, 65)}
 
-.fondomarron {background-color:rgb(97, 67, 67);}
+/*SECCION CONTACTENOS*/ 
 
-.letragris {color: grey}
+#contactanos {  display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-top: 80px;
+                margin-bottom: 75px;
+            }
 
-input {font-size: 25px; width: 500px;}
+#contactanos h3 {font-size: 30px;}
+#contactanos div input { background-color:rgb(97, 67, 67);
+            color: rgb(255, 255, 255);
+            border-radius: 15px;
+            padding: 15px;
+            font-size: 15px;
+            width: 340px;
+            height: 40px;
+            border-radius: 15px;
+            margin: 10px;
+        }
 
-i {font-size: 40px; color: blue}
+#resetear { background-color: rgb(121, 120, 120);
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            width: 110px;
+            height: 34px;
+            border: hidden;
+            border-radius: 15px;
+            margin: 6px;
+            }
 
-#final {background-color: orange; color: rgb(255,255,255);}
+#enviar { background-color: #ec9c24;
+            color: rgb(255, 255, 255);
+            font-size: 16px;
+            width: 110px;
+            height: 34px;
+            border: hidden;
+            border-radius: 15px;
+            margin: 6px;
+            }    
+            
+/*SECCION SUSCRIPCION*/
+
+#suscribirse {  display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                background-color: #ec9c24;
+                flex-wrap: wrap;
+                height: 180px;
+            }
+#suscribirse #ladoizquierdo{display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            color: rgb(255, 255, 255);
+                            font-weight: bold;
+                            font-size: 25px;
+                            padding-left: 30px;
+                            }
+
+#suscribirse #ladoizquierdo img { padding-right: 5px;}
+
+#suscribirse #ladoderecho { display: flex;
+                            flex-direction: row;
+                            align-items: center;
+                            padding-right: 47px;
+                            }
+
+#suscribirse #ladoderecho input{background-color: rgb(255,255,255);
+                                font-size: 10px;
+                                padding: 14px 8px;
+                                border: hidden;
+                                border-radius: 15px;
+                                width: 270px;
+                                margin-right: 5px;
+                                }
+
+#suscribirse #ladoderecho button{background-color: rgb(97, 67, 67);
+                                color:rgb(255, 255, 255);
+                                font-weight: bold;
+                                font-size: 10px;
+                                padding: 14px 10px;
+                                border: hidden;
+                                border-radius: 15px;
+                                width: 70px;
+                                }
+
+
+/*DATOS DE CONTACTO*/
+
+#fondomarron {  display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px;
+                background-color: rgb(97, 67, 67);
+            }
+
+#fondomarron #alladodellogo{display: flex;
+                            flex-direction: column;
+                            }
+                            
+#fondomarron #alladodellogo div {display: flex;
+                                flex-direction: row;
+                                justify-content: space-around;
+                                margin: 10px;
+                                width: 270px;
+                                height: 70px;
+                                }
+
+#fondomarron #alladodellogo div i {font-size: 66px; color: rgb(182, 176, 176);}
+
+#fondomarron #alladodellogo div div.encolumna {display: flex; 
+            flex-direction: column;
+            align-items: center;
+            margin:0px;}
+
+span.letrablanca {  color: rgb(255, 255, 255);
+                    font-weight: bold;
+                    font-size: 20px;}
+
+span.letragris {color: rgb(105, 105, 105);
+                font-size: 12px;}
+
+/*DERECHOS RESERVADOS*/
+#derechosreservados{text-align: center; 
+                    background-color: rgb(0,0,0);
+                    color:rgb(255, 255, 255);
+                    font-weight: bold;
+                    padding: 1px;
+                    }
