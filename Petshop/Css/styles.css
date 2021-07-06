@@ -42,7 +42,6 @@
                         background-image: url('/Imagenes/fondoimagen.png');
                         background-repeat: no-repeat;
                         background-size: cover;
-                        /*background-attachment: fixed;*/
                         text-align: center;
                         padding-right: 40px;
                     }
@@ -81,45 +80,29 @@ h1 {font-size: 40px;;}
 
 #opciones {color:rgb(71, 70, 70)}
 
-
 /*CARDS*/
 
-#cards {display: flex;
+.container {display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         text-align: center;
         }
 
-#churrasquito { display: flex;
-                flex-direction: column;
-                width: 265px;
-                height: 265px;
-                background-image: url('/Imagenes/churrasquito.png');
-                justify-content: flex-end;
-                padding-bottom: 20px;
-                padding-top: 20px;
-            }
+.cards {display: flex;
+    flex-direction: column;
+    width: 265px;
+    height: 265px;
+    justify-content: flex-end;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+.churrasquito {background-image: url('/Imagenes/churrasquito.png');}
 
-#comedero { display: flex;
-                flex-direction: column;
-                width: 265px;
-                height: 265px;
-                background-image: url('/Imagenes/comedero.png');
-                justify-content: flex-end;
-                padding-bottom: 20px;
-                padding-top: 20px;
-            }
+.comedero {background-image: url('/Imagenes/comedero.png');}
 
-#huesito { display: flex;
-                flex-direction: column;
-                width: 265px;
-                height: 265px;
-                background-image: url('/Imagenes/Huesito.png');
-                justify-content: flex-end;
-                padding-bottom: 20px;
-                padding-top: 20px;
-            }
+.huesito { background-image: url('/Imagenes/Huesito.png');}
 
 .precio {color:rgb(224, 201, 65)}
 
@@ -254,3 +237,12 @@ span.letragris {color: rgb(105, 105, 105);
                     font-weight: bold;
                     padding: 1px;
                     }
+
+@media (max-width: 525px) {
+    .container {flex-direction: column;
+        align-items: center;
+        background-color: blue;
+        }
+    #menudeopciones li{display: none;}
+    
+}
