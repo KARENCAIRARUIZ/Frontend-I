@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div><h4 id="descuentos">20% de descuento en todos los productos</h4></div>
+        <div><h1 id="heroes">Tienda DC</h1></div>
+    </header>
+    <main>
+        <form action="registro.html" method="POST" id="form_registro">
+            <h1>Registrarme</h1>
+            
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre/s" required>
+            <input type="text" name="apellido" id="apellido" placeholder="Apellido/s" required>
+            <input type="email" name="email" id="email" placeholder="Ingrese su correo electrónico" required>
+            <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" required>
+
+            <select name="Pais" required>
+                    <option value="Seleccionar_un_pais">Seleccionar País</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Brasil">Brasil</option>
+                </select>
+            
+            <div class="centrarfinalform">
+                <div>
+                    <input type="reset" value="RESETEAR" class="reset"> </input>
+                    <input type="submit" value="ENTRAR" class="enviar"> </input>
+                </div>
+                <div>
+                    <span>¿Ya tenes una cuenta?</span>
+                    <span><a href="login.html" target="blank">Ingresar</a></span>
+                </div>
+            </div>
+            <br><br>
+            <a href="index.html" class="volver">Volver a la Página Principal</a>
+
+        </form>
+    </main>
+
+    <footer>
+        <h3>Todos los derechos reservados a FRONT END 1</h3>
+    </footer>
+</body>
+</html>

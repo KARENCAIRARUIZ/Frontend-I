@@ -1,0 +1,141 @@
+*{margin: 0px; padding: 0px;}
+
+/*HEADER*/
+
+#descuentos {   background-color: #1cd1b0;
+                font-size: 15px;
+                padding: 10px;
+        }
+
+#heroes {
+        background-color: #00669F;
+        font-size: 50px;
+        padding: 28px;
+        }
+/*Menu de opciones*/
+#menu ul{   display:flex;
+            justify-content: flex-end;
+            padding: 15px;
+            background-color: rgb(0, 0, 0);
+}
+ul li a{ padding:15px;
+    color: rgb(255,255,255);
+    font-size: 20px;
+    text-decoration: none;}
+
+/*MAIN*/
+main { display:flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        }
+
+/*CARDS*/
+section {
+        display: flex;
+        flex-direction: column;
+        height: 529px;
+        width: 300px;
+        padding: 70px;
+        }
+
+.cara {
+        position: relative;
+        bottom: 110px;
+        z-index: 100;
+        align-self: center;
+        width: 120px;
+        height: 120px;
+        }
+
+.corazon {      position: relative;
+                bottom: 190px;
+                padding-left: 20px;
+                padding-top: 20px;
+                z-index: 100;
+                align-self: flex-start;
+                width: 30px; 
+                height: 26px;
+}
+
+.fondoclaro {   display:flex;
+                flex-direction: column;
+                background-color: #F3F3F3;
+                padding-top: 90px;
+                padding-bottom: 20px;
+                width: 300px;
+                position: relative;
+                bottom: 165px;
+                text-align: center;
+        }
+
+p {padding: 15px;}
+
+.vermas {       background-color: #00669F;
+                color: rgb(255,255,255);
+                font-weight: bold;
+                padding: 8px;
+                text-decoration: none;
+                width: 100px;
+                border-radius: 25px;
+                margin-left: 90px;
+        }
+
+/*derechos reservados*/
+footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #00669F; 
+        color: rgb(255,255,255);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        width: auto;
+        justify-content: center;
+        }
+
+/*FORMULARIOS*/
+h1 {font-size: 60px; 
+    font-weight: bold;
+    padding-bottom: 40px;}
+
+form {  display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        background-color: rgb(255,255,255);
+} 
+/*estilo a los inputs y select*/
+input, 
+select,
+textarea {width: 400px;
+        font-size: 20px;
+        padding: 15px;
+        margin:4px;}
+        
+textarea {height: 200px;}
+
+/*estilo a los botones*/
+div input {
+        font-size: 18px;
+        text-align: center;
+        width: 200px;
+        padding:15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        border-radius: 30px;
+    font-weight: bold;}
+
+    .entrar, 
+    .enviar {background-color: #1cd1b0;}
+    
+    .reset {background-color: darkgray;}
+    
+    /* alinear al centro la parte final del formulario*/
+.centrarfinalform {text-align: center; font-size: 20px;}
+
+.volver {font-size: 20px; 
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;}
