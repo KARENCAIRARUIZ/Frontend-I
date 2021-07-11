@@ -1,0 +1,181 @@
+*{  margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;}
+
+/*HEADER*/
+
+#descuentos {   background-color: #1cd1b0;
+            font-size: 15px;
+            padding: 10px;
+    }
+
+#heroes {
+    background-color: #00669F;
+    font-size: 50px;
+    padding: 28px;
+    }
+/*Menu de opciones*/
+#menu ul{display:flex;
+    justify-content: flex-end;
+    padding: 15px;
+    background-color: rgb(0, 0, 0);
+}
+ul li a{ padding:15px;
+    color: rgb(255,255,255);
+    font-size: 20px;
+    text-decoration: none;}
+
+
+/*FORMULARIO*/
+
+form {display: flex; 
+    flex-direction: column;
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom:40px;
+    border-radius: 50px;
+    padding-left: 100px;
+    padding-right: 100px;
+    background-color: #00669F;
+    color: white;
+    width: 954px;
+    height: 740px;
+}
+
+h1{font-size: 40px; text-align: center; margin-top: 15px;}
+    
+h2 {font-size: 20px;
+    font-weight: normal;
+    margin: auto;
+    margin-bottom: 20px;}
+
+#espaciodeformulario { display: flex;
+            width: 760px;
+            display: flex;
+            justify-content:space-around;
+            flex-wrap: wrap;
+        }
+
+.labeleinput, .labelselect { 
+            display: flex;
+            flex-direction: column;
+            width: 330px; 
+            height: 60px;
+            margin: 20px;
+            font-size: 25px;}
+
+#finalform {display:flex;
+            width: 700px;
+            height: 310px;}   
+
+textarea {  width: 330px; 
+            height: 310px; 
+            border-radius: 15.5px;
+            padding-top: 10px;
+            padding-left: 10px;
+            font-size: 15px;
+            }
+
+#poderesypersonajes {display: flex; 
+                    flex-direction: column;
+                    justify-content: center;
+                    margin: auto;
+                    margin-bottom: 5px;
+                }
+h3 {font-size: 20px; font-weight:normal; padding-bottom: 10px;}
+hr {margin: 20px;}
+
+.opciones {
+        display: flex;
+        flex-direction: column;
+        width: 156px; 
+        height: 100px;}
+
+#añadir {width: 350px; height: 65px;
+    font-weight: bold; 
+    font-size: 40px;
+    border-radius: 23px;
+    background-color: #1cd1b0;
+    margin: 10px;}
+
+/*VOLVER A PAGINA PRINCIPAL*/
+.volver {font-size: 20px; 
+        margin: 30px;
+        color: black;
+        text-decoration: none;
+        font-weight: bold;}
+
+/*DERECHOS RESERVADOS*/
+footer {
+    display: flex;
+    flex-direction: row;
+    background-color: #00669F; 
+    color: rgb(255,255,255);
+    width: auto;
+    justify-content: center;
+    margin-top: 10px;
+    }
+
+/*MEDIA QUERIES*/
+
+@media (max-width: 475px){
+    /*PARA CELULAR*/
+    form { width: 98%; 
+        height: 900px;
+        padding: 0px;
+        align-items: center;
+    }
+    h2 {font-size: 16px;
+        padding: 15px;
+    }
+    .labeleinput, .labelselect {
+        flex-direction: column;
+        width: 270px; 
+        height: 50px;
+        font-size: 20px;}
+
+    #finalform {flex-direction: column;
+        width: 300px;
+        height: 400px;
+        align-items: center;
+    }
+    textarea {width: 250px;}
+    #añadir {width: 250px; height: 45px;
+        font-weight: bold; 
+        font-size: 25px;
+        border-radius: 23px;
+        background-color: #1cd1b0;
+        margin: 10px;}
+}
+
+
+@media (max-width: 1125px) {
+    /*PARA TABLETS Y NOTEBOOK*/
+    #menu ul{justify-content: center;
+    }
+    form { width: 95%; 
+        height: 1000px;
+        padding: 0px;
+        align-items: center;
+    }
+    #espaciodeformulario { 
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+    }
+    #finalform {flex-direction: column;
+        width: 400px;
+        height: 400px;
+        align-items: center;
+    }
+    textarea {margin-bottom: 15px;
+    }
+
+}
+
+
+
+
+
+
+

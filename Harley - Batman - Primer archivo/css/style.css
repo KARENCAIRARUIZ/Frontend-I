@@ -2,8 +2,8 @@
 
 /*HEADER*/
 
-#descuentos {   background-color: #1cd1b0;
-                font-size: 15px;
+#descuentos {   background-color: #1CD1B0;
+                font-size: 30px;
                 padding: 10px;
         }
 
@@ -12,16 +12,6 @@
         font-size: 50px;
         padding: 28px;
         }
-/*Menu de opciones*/
-#menu ul{   display:flex;
-            justify-content: flex-end;
-            padding: 15px;
-            background-color: rgb(0, 0, 0);
-}
-ul li a{ padding:15px;
-    color: rgb(255,255,255);
-    font-size: 20px;
-    text-decoration: none;}
 
 /*MAIN*/
 main { display:flex;
@@ -60,6 +50,7 @@ section {
 
 .fondoclaro {   display:flex;
                 flex-direction: column;
+                align-content: space-around;
                 background-color: #F3F3F3;
                 padding-top: 90px;
                 padding-bottom: 20px;
@@ -74,11 +65,10 @@ p {padding: 15px;}
 .vermas {       background-color: #00669F;
                 color: rgb(255,255,255);
                 font-weight: bold;
-                padding: 8px;
+                padding:  5px;
                 text-decoration: none;
-                width: 100px;
-                border-radius: 25px;
-                margin-left: 90px;
+                border-left: solid 100px  #F3F3F3;
+                border-right: solid 100px  #F3F3F3;
         }
 
 /*derechos reservados*/
@@ -91,51 +81,5 @@ footer {
         padding-bottom: 20px;
         padding-left: 20px;
         width: auto;
-        justify-content: center;
+        justify-content: flex-start;
         }
-
-/*FORMULARIOS*/
-h1 {font-size: 60px; 
-    font-weight: bold;
-    padding-bottom: 40px;}
-
-form {  display: flex;
-        flex-direction: column;
-        margin-top: 100px;
-        margin-bottom: 100px;
-        background-color: rgb(255,255,255);
-} 
-/*estilo a los inputs y select*/
-input, 
-select,
-textarea {width: 400px;
-        font-size: 20px;
-        padding: 15px;
-        margin:4px;}
-        
-textarea {height: 200px;}
-
-/*estilo a los botones*/
-div input {
-        font-size: 18px;
-        text-align: center;
-        width: 200px;
-        padding:15px;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        text-align: center;
-        border-radius: 30px;
-    font-weight: bold;}
-
-    .entrar, 
-    .enviar {background-color: #1cd1b0;}
-    
-    .reset {background-color: darkgray;}
-    
-    /* alinear al centro la parte final del formulario*/
-.centrarfinalform {text-align: center; font-size: 20px;}
-
-.volver {font-size: 20px; 
-        text-align: center;
-        text-decoration: none;
-        font-weight: bold;}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carrito de Compra</title>
+    <link href="css/compra.css" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h4 id="descuentos">20% de descuento en todos los productos</h4>
+        <h1 id="heroes">Tienda DC</h1>
+    </header>
+    <nav id="menu">
+        <ul type="none">
+            <li><a href="contacto.html" target="blank">Contacto</a></li>
+            <li><a href="registro.html" target="blank">Registrarse</a></li>
+            <li><a href="login.html" target="blank">Ingresar</a></li>
+        </ul>
+    </nav>
+    
+    <main id="form">
+            <form action="/compra.html" method="POST">
+            
+                <h1>Añadi tu super!</h1>
+                <h2>Agregá tu personaje favorito completando las opciones</h2>
+
+            <div id="espaciodeformulario">
+                <div class="labeleinput">
+                    <label for="nombre">*Nombre</label>
+                    <input type="text" name="nombre" id="nombre" class="input" required>
+                </div>
+                <div class="labelselect">
+                    <label>*Especie</label>
+                    <select required>
+                        <option value="Batman1">Batman 1</option>
+                        <option value="Harley">Harley</option>
+                        <option value="Batman2">Batman 2</option>
+                    </select>
+                </div>
+                    
+                <div class="labeleinput">
+                    <label>Fecha</label>
+                    <input type="date" name="fecha" value="1997-06-03" min="1990-12-02" max="2010-03-03" class="input" required>
+                </div>
+                <div class="labeleinput">
+                    <label>Agregar foto</label>
+                    <input type="file" name="foto" accept=".jpg, .png" class="input" required>
+                </div>
+
+                <div id="finalform">
+                    <textarea type="text" name="descripcion">Descripción..</textarea>
+                    <!--SE PUEDEN ELEEGIR VARIAS OPCIONES-->
+                    <section id="poderesypersonajes">
+                        <div class="opciones">
+                            <h3>Poderes</h3>
+                                <label ><input type="checkbox" name="poderes" value="volar" class="boton-checkbox">Volar</label>
+                                <label><input type="checkbox" name="poderes" value="superinteligencia" class="boton-checkbox">Superinteligencia></label>                    </label>
+                                <label><input type="checkbox" name="poderes" value="vista de rayo láser" class="boton-checkbox">Vista de Rayos Láser</label>
+                                <label><input type="checkbox" name="poderes" value="billetera gorda" class="boton-checkbox">Billetera Gorda</label>
+                        </div>
+                        <hr>
+                        <div class="opciones">
+                            <h3>Tipo de personajes</h3>     
+                            <label><input type="radio" name="tiposdepersonajes" value="heroe/heroina" class="boton-radio">Heroe/Heroina</label>
+                            <label><input type="radio" name="tiposdepersonajes" value="villano/villana" class="boton-radio">Villano/Villana</label>              
+                        </div>
+                    </section>
+                </div>
+                <input type="submit" name="añadir" value="Añadir" id="añadir">
+            </div>
+
+        </form>
+    </div>
+    </main>
+
+    <a href="index.html" class="volver">Volver a la Página Principal</a>
+
+    <footer>
+        <h3>Todos los derechos reservados a FRONT END 1</h3>
+    </footer>
+</body>
+</html>

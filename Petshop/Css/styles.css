@@ -1,16 +1,15 @@
+*{margin:0px; padding: 0px; box-sizing: border-box;}
 /*FONDO NEGRO*/
 #fondonegro {display: flex;
-            flex-direction: row;
             justify-content: space-between;
             background-color: rgb(0,0,0);
             width: 100%;
             color:rgb(255, 255, 255);
             }
 
-#arribaizquierda {padding: 2px 2px 2px 90px;}
+#arribaizquierda {padding: 2px 2px 2px 30px;}
 
 #arribaderecha {display: flex;
-                flex-direction: row;
                 padding-right: 60px;
                 }
 
@@ -18,7 +17,6 @@
 
 /*FONDO NARANJA*/
 #fondonaranja { display: flex;
-                flex-direction: row;
                 justify-content: space-between;
                 background-color: orange;
                 width: 100%;}
@@ -28,7 +26,6 @@
                     padding: 30px;}
 
 #menudeopciones {display: flex;
-                flex-direction: row;
                 justify-content: center;
                 padding: 30px;
                 color:rgb(255, 255, 255);}
@@ -48,7 +45,6 @@
 
 #placerconocerte {  font-weight: normal;
                     font-size: 30px;
-                    padding: 2px;
                     margin-top: 160px;
                     background-color: rgb(255, 255, 255);
                     width: 320px;
@@ -63,7 +59,7 @@
             color:rgb(255, 255, 255);
             padding: 6px;
             border: orange;
-            margin-bottom: 160px;}
+            margin-bottom: 200px;}
 
 /*PRODUCTOS DESTACADOS*/
 
@@ -73,8 +69,7 @@
                         margin-top: 20px;
                         margin-bottom: 20px;;}
 
-#patita {width: 67px;
-        height: 71px;}
+#patita {width: 67px; height: 71px;}
 
 h1 {font-size: 40px;;}
 
@@ -83,10 +78,10 @@ h1 {font-size: 40px;;}
 /*CARDS*/
 
 .container {display: flex;
-        flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
         text-align: center;
+        margin-bottom: 30px;
         }
 
 .cards {display: flex;
@@ -99,65 +94,52 @@ h1 {font-size: 40px;;}
     margin-bottom: 20px;
 }
 .churrasquito {background-image: url('/Imagenes/churrasquito.png');}
-
 .comedero {background-image: url('/Imagenes/comedero.png');}
-
 .huesito { background-image: url('/Imagenes/Huesito.png');}
 
 .precio {color:rgb(224, 201, 65)}
 
+hr {width: 350px; margin: auto;}
+
 /*SECCION CONTACTENOS*/ 
 
-#contactanos {  display: flex;
-                flex-direction: column;
-                align-items: center;
-                margin-top: 80px;
-                margin-bottom: 75px;
-            }
+#formulariosdecontacto { display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                        margin: 20px;
+                    }
 
-#contactanos h3 {font-size: 30px;}
-#contactanos div input { background-color:rgb(97, 67, 67);
-            color: rgb(255, 255, 255);
-            border-radius: 15px;
-            padding: 15px;
-            font-size: 15px;
-            width: 340px;
-            height: 40px;
-            border-radius: 15px;
-            margin: 10px;
-        }
+#formulariosdecontacto h3 {font-size: 30px;}
 
-#resetear { background-color: rgb(121, 120, 120);
-            color: rgb(255, 255, 255);
-            font-size: 16px;
-            width: 110px;
-            height: 34px;
-            border: hidden;
-            border-radius: 15px;
-            margin: 6px;
-            }
+#formulariosdecontacto input {
+    background-color: rgb(97, 67, 67);
+    font-size: 20px;
+    width: 400px; 
+    height: 50px;
+    margin: 5px;
+    border-radius: 15px;
+    padding-left: 10px;}              
 
-#enviar { background-color: #ec9c24;
-            color: rgb(255, 255, 255);
-            font-size: 16px;
-            width: 110px;
-            height: 34px;
-            border: hidden;
-            border-radius: 15px;
-            margin: 6px;
-            }    
-            
+#formulariosdecontacto input:focus {color: white;font-weight: bold;}
+
+#resetear-enviar {margin-top: 40px;}
+
+#resetear-enviar #resetear {width: 195px;
+                            background-color:rgb(179, 173, 173);
+                            font-weight: bold;}
+#resetear-enviar #enviar{width: 195px;
+                        background-color: #ec9c24;
+                        font-weight: bold;}
+
 /*SECCION SUSCRIPCION*/
 
 #suscribirse {  display: flex;
-                flex-direction: row;
                 justify-content: space-between;
                 background-color: #ec9c24;
                 flex-wrap: wrap;
                 height: 180px;
             }
 #suscribirse #ladoizquierdo{display: flex;
-                            flex-direction: row;
                             align-items: center;
                             color: rgb(255, 255, 255);
                             font-weight: bold;
@@ -168,35 +150,29 @@ h1 {font-size: 40px;;}
 #suscribirse #ladoizquierdo img { padding-right: 5px;}
 
 #suscribirse #ladoderecho { display: flex;
-                            flex-direction: row;
                             align-items: center;
                             padding-right: 47px;
                             }
 
-#suscribirse #ladoderecho input{background-color: rgb(255,255,255);
-                                font-size: 10px;
-                                padding: 14px 8px;
-                                border: hidden;
-                                border-radius: 15px;
-                                width: 270px;
-                                margin-right: 5px;
-                                }
+#suscribirse #ladoderecho input {
+    font-size: 17px;
+    width: 270px; 
+    height: 50px;
+    margin: 5px;
+    border-radius: 15px;
+    padding-left: 10px;}   
 
-#suscribirse #ladoderecho button{background-color: rgb(97, 67, 67);
-                                color:rgb(255, 255, 255);
-                                font-weight: bold;
-                                font-size: 10px;
-                                padding: 14px 10px;
-                                border: hidden;
-                                border-radius: 15px;
-                                width: 70px;
-                                }
-
+#botonsusc {
+    width: 100px;
+    height: 50px;
+    border-radius: 15px;
+    background-color: rgb(97, 67, 67);
+    color: rgb(255, 255, 255);
+}
 
 /*DATOS DE CONTACTO*/
 
 #fondomarron {  display: flex;
-                flex-direction: row;
                 flex-wrap: wrap;
                 justify-content: space-between;
                 align-items: center;
@@ -205,18 +181,16 @@ h1 {font-size: 40px;;}
             }
 
 #fondomarron #alladodellogo{display: flex;
-                            flex-direction: column;
-                            }
+                            flex-direction: column;}
                             
 #fondomarron #alladodellogo div {display: flex;
-                                flex-direction: row;
                                 justify-content: space-around;
                                 margin: 10px;
                                 width: 270px;
                                 height: 70px;
                                 }
 
-#fondomarron #alladodellogo div i {font-size: 66px; color: rgb(182, 176, 176);}
+#fondomarron #alladodellogo div i {font-size: 66px; color: rgb(158, 150, 150);}
 
 #fondomarron #alladodellogo div div.encolumna {display: flex; 
             flex-direction: column;
@@ -238,11 +212,23 @@ span.letragris {color: rgb(105, 105, 105);
                     padding: 1px;
                     }
 
-@media (max-width: 525px) {
-    .container {flex-direction: column;
+
+
+
+@media (max-width: 590px){
+    /*Mobile*/
+    #suscribirse #ladoderecho {
+        flex-direction: column; 
         align-items: center;
-        background-color: blue;
-        }
-    #menudeopciones li{display: none;}
-    
+        margin: auto;
+    }
+    article.logofront {margin: auto;}
+}
+
+@media (max-width: 1090px){
+    /*Tablet y net*/
+    #suscribirse #ladoderecho {
+        justify-content: center;
+        margin: auto;
+    }
 }

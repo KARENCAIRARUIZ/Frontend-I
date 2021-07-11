@@ -1,0 +1,107 @@
+*{      margin: 0px; 
+    padding: 0px; 
+    box-sizing: border-box;}
+
+/*HEADER*/
+
+#descuentos {   background-color: #1cd1b0;
+            font-size: 15px;
+            padding: 10px;
+    }
+
+#heroes {
+    background-color: #00669F;
+    font-size: 50px;
+    padding: 28px;
+    }
+
+main { display:flex;
+        justify-content: space-around;
+        margin: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        }
+
+/*FORMULARIOS*/
+
+h1 {font-size: 60px; 
+    font-weight: bold;
+    padding-bottom: 40px;}
+
+form {  display: flex;
+        flex-direction: column;
+        margin-top: 100px;
+        margin-bottom: 100px;
+        background-color: rgb(255,255,255);
+} 
+/*estilo a los inputs y select*/
+input, 
+select,
+textarea {width: 400px;
+        font-size: 20px;
+        padding: 15px;
+        margin:4px;}
+        
+textarea {height: 200px;}
+
+/*estilo a los botones*/
+div input {
+        font-size: 18px;
+        text-align: center;
+        width: 200px;
+        padding:15px;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        text-align: center;
+        border-radius: 30px;
+        font-weight: bold;}
+
+.entrar, 
+.enviar {background-color: #1cd1b0;}
+
+.reset {background-color: darkgray;}
+
+/* alinear al centro la parte final del formulario*/
+
+.centrarfinalform {text-align: center; font-size: 20px;}
+
+.volver {font-size: 20px; 
+        text-align: center;
+        text-decoration: none;
+        font-weight: bold;}
+
+/*DERECHOS RESERVADOS*/
+footer {
+        display: flex;
+        flex-direction: row;
+        background-color: #00669F; 
+        color: rgb(255,255,255);
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        width: auto;
+}
+
+/*MEDIA QUERIES*/
+
+@media (max-width:475px){
+        input, 
+        select,
+        textarea {width: 90%;
+        font-size: 15px;
+        padding: 15px;
+        margin:4px;}
+        
+        .centrarfinalform {
+                display: flex;
+                justify-content: center;
+                flex-wrap: wrap;}
+        
+        div input {
+                font-size: 16px;
+                text-align: center;
+                width: 160px;
+                padding:10px;
+                margin-top: 20px;}
+
+}

@@ -1,9 +1,11 @@
-*{margin: 0px; padding: 0px;}
+*{      margin: 0px; 
+        padding: 0px; 
+        box-sizing: border-box;}
 
 /*HEADER*/
 
-#descuentos {   background-color: #1CD1B0;
-                font-size: 30px;
+#descuentos {   background-color: #1cd1b0;
+                font-size: 15px;
                 padding: 10px;
         }
 
@@ -12,12 +14,24 @@
         font-size: 50px;
         padding: 28px;
         }
+/*MENU DE OPCIONES*/
+#menu ul {  display:flex;
+            justify-content: flex-end;
+            padding: 15px;
+            background-color: rgb(0, 0, 0);
+}
+ul li a{ padding:15px;
+    color: rgb(255,255,255);
+    font-size: 20px;
+    text-decoration: none;}
 
 /*MAIN*/
 main { display:flex;
         flex-direction: row;
         justify-content: space-around;
         flex-wrap: wrap;
+        margin-top: 50px;
+        margin-bottom: 50px;
         }
 
 /*CARDS*/
@@ -26,16 +40,12 @@ section {
         flex-direction: column;
         height: 529px;
         width: 300px;
-        padding: 70px;
         }
 
-.cara {
-        position: relative;
+.cara { position: relative;
         bottom: 110px;
         z-index: 100;
         align-self: center;
-        width: 120px;
-        height: 120px;
         }
 
 .corazon {      position: relative;
@@ -44,13 +54,10 @@ section {
                 padding-top: 20px;
                 z-index: 100;
                 align-self: flex-start;
-                width: 30px; 
-                height: 26px;
 }
 
 .fondoclaro {   display:flex;
                 flex-direction: column;
-                align-content: space-around;
                 background-color: #F3F3F3;
                 padding-top: 90px;
                 padding-bottom: 20px;
@@ -65,13 +72,14 @@ p {padding: 15px;}
 .vermas {       background-color: #00669F;
                 color: rgb(255,255,255);
                 font-weight: bold;
-                padding:  5px;
+                padding: 8px;
                 text-decoration: none;
-                border-left: solid 100px  #F3F3F3;
-                border-right: solid 100px  #F3F3F3;
+                width: 100px;
+                border-radius: 25px;
+                margin: auto;
         }
 
-/*derechos reservados*/
+/*DERECHOS RESERVADOS*/
 footer {
         display: flex;
         flex-direction: row;
@@ -81,5 +89,50 @@ footer {
         padding-bottom: 20px;
         padding-left: 20px;
         width: auto;
-        justify-content: flex-start;
         }
+
+.iconodecompra {position: fixed;
+                right: 20px;
+                bottom: 20%;
+                text-decoration: none;
+                background: #00669F;
+                color: white;
+                font-weight: bold;
+                font-size: 50px;
+                width: 60px;
+                height: 60px;
+                text-align: center;
+                border-radius: 40px;}
+
+
+/*Media Queries*/
+
+@media (max-width: 470px){
+        main {  flex-direction: column;
+                align-items: center;}
+        #menu ul, footer {justify-content: center;}
+        .iconodecompra {width:30px; 
+                        height: 30px; 
+                        font-size: 25px;}
+        footer {font-size:12px}
+                }
+
+@media (min-width: 470px) {
+main {  flex-direction: column;
+        align-items: center;
+}
+#menu ul, footer {justify-content: center;}
+.iconodecompra {width:60px; 
+                height: 60px; 
+                font-size: 50px;}
+}
+
+@media (min-width:640px) {
+main {  flex-direction: row;
+        justify-content: space-around;}
+#menu ul {justify-content: flex-end;}
+.iconodecompra {width:60px; 
+                height: 60px; 
+                font-size: 50px;
+                bottom: 50%;}
+}

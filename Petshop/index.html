@@ -65,18 +65,20 @@
                 <p class="precio">$650</p>
             </div>
         </section>
-
-        <section id="contactanos">
+        <hr>
+        
+        <form action="index.html" method="POST" id="formulariosdecontacto">
             <h3>Contáctenos</h3>
-            <div><input type="text" placeholder="Nombre y apellido"></div>
-            <div><input type="text" placeholder="Ingresa tu correo electrónico"></div>
-            <div><input type="text" placeholder="Teléfono"></div>
+            
+            <input type="text" name="nombreyapellido" placeholder="Nombre y apellido" required>
+            <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+            <input type="tel" name="tel" placeholder="Teléfono" required>
 
-            <div>
-                <button id="resetear">Resetear</button>
-                <button id="enviar">Enviar</button>
+            <div id="resetear-enviar">
+                <input type="reset" name ="resetear" id="resetear" value="Resetear">
+                <input type="submit" name="enviar" id="enviar" value="Enviar">
             </div>
-        </section>
+        </form>
     
     </main>
 
@@ -86,10 +88,10 @@
                 <img src="/Imagenes/mensaje.png" alt="imagen de mensajes">
                 <h4 class="h4">Suscribete para mas novedades</h4>
             </div>
-            <div id="ladoderecho">
-                <input type="text" placeholder="Ingresa tu correo electrónico">
-                <button>Suscribete</button>
-            </div>
+            <form action="/index.html" method="POST" id="ladoderecho">
+                <input type="email" name="email" placeholder="Ingresa tu correo electrónico" required>
+                <input type="submit" value=" Suscribirse" id="botonsusc">
+            </form>
         </section>
 
         <!--Seccion datos de Petshop-->
@@ -119,7 +121,9 @@
             </article>
             
             <article class="logofront">
-            <img src="/Imagenes/logoPetshop.png" alt="Logo del Petshop">
+            <a href="#logofrontarriba">
+                <img src="/Imagenes/logoPetshop.png" alt="Logo del Petshop">
+            </a>
             </article>
         </section>
         
