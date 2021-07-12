@@ -148,7 +148,6 @@ footer {
         margin: 10px;}
 }
 
-
 @media (max-width: 1125px) {
     /*PARA TABLETS Y NOTEBOOK*/
     #menu ul{justify-content: center;
@@ -170,7 +169,6 @@ footer {
     }
     textarea {margin-bottom: 15px;
     }
-
 }
 
 

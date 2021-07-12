@@ -1,17 +1,19 @@
-*{margin:0px; padding: 0px; box-sizing: border-box;}
+*{  margin:0px; 
+    padding: 0px; 
+    box-sizing: border-box;}
 /*FONDO NEGRO*/
 #fondonegro {display: flex;
             justify-content: space-between;
             background-color: rgb(0,0,0);
             width: 100%;
             color:rgb(255, 255, 255);
-            }
+}
 
 #arribaizquierda {padding: 2px 2px 2px 30px;}
 
 #arribaderecha {display: flex;
                 padding-right: 60px;
-                }
+}
 
 #arribaderecha li {padding-left: 30px;}
 
@@ -19,18 +21,25 @@
 #fondonaranja { display: flex;
                 justify-content: space-between;
                 background-color: orange;
-                width: 100%;}
+                width: 100%;
+                height: 100px;
+                padding: 20px;
+}
 
-#logofrontarriba {  width: 334px; 
-                    height: 46px;
-                    padding: 30px;}
+#logofrontarriba {  width: 132px; 
+                    height: 19px;
+                    align-self: center
+}
 
 #menudeopciones {display: flex;
                 justify-content: center;
-                padding: 30px;
-                color:rgb(255, 255, 255);}
+                padding: 30px 30px 30px 0px;
+                color:rgb(255, 255, 255);
+}
 
-#menudeopciones li{padding-left: 20px;}
+#menudeopciones li{padding-left: 10px;}
+
+#menudeopciones li::before {content: url('/Imagenes/huella_de_menu.png')}
 
 #fondoimagenprincipal { display: flex;
                         flex-direction: column;
@@ -41,17 +50,18 @@
                         background-size: cover;
                         text-align: center;
                         padding-right: 40px;
-                    }
+}
 
 #placerconocerte {  font-weight: normal;
                     font-size: 30px;
                     margin-top: 160px;
                     background-color: rgb(255, 255, 255);
                     width: 320px;
-                }
+}
 #comederosendescuentos {font-weight: normal; 
                         text-align: center;
-                        font-size: 20px;}
+                        font-size: 20px;
+}
 
 #comederos {font-size: 15px;
             width: 120px;
@@ -59,7 +69,8 @@
             color:rgb(255, 255, 255);
             padding: 6px;
             border: orange;
-            margin-bottom: 200px;}
+            margin-bottom: 200px;
+}
 
 /*PRODUCTOS DESTACADOS*/
 
@@ -67,7 +78,8 @@
                         flex-direction: column;
                         align-items: center;
                         margin-top: 20px;
-                        margin-bottom: 20px;;}
+                        margin-bottom: 20px;
+}
 
 #patita {width: 67px; height: 71px;}
 
@@ -82,7 +94,7 @@ h1 {font-size: 40px;;}
         justify-content: space-around;
         text-align: center;
         margin-bottom: 30px;
-        }
+}
 
 .cards {display: flex;
     flex-direction: column;
@@ -93,6 +105,7 @@ h1 {font-size: 40px;;}
     padding-top: 20px;
     margin-bottom: 20px;
 }
+
 .churrasquito {background-image: url('/Imagenes/churrasquito.png');}
 .comedero {background-image: url('/Imagenes/comedero.png');}
 .huesito { background-image: url('/Imagenes/Huesito.png');}
@@ -107,7 +120,7 @@ hr {width: 350px; margin: auto;}
                         flex-direction: column;
                         align-items: center;
                         margin: 20px;
-                    }
+}
 
 #formulariosdecontacto h3 {font-size: 30px;}
 
@@ -118,18 +131,30 @@ hr {width: 350px; margin: auto;}
     height: 50px;
     margin: 5px;
     border-radius: 15px;
-    padding-left: 10px;}              
-
-#formulariosdecontacto input:focus {color: white;font-weight: bold;}
+    padding-left: 10px;
+}              
+#formulariosdecontacto input:hover {background-color: rgb(255,255,255);}
+#formulariosdecontacto input:focus {color: rgb(0,0,0);font-weight: bold;}
 
 #resetear-enviar {margin-top: 40px;}
 
 #resetear-enviar #resetear {width: 195px;
                             background-color:rgb(179, 173, 173);
-                            font-weight: bold;}
+                            font-weight: bold;
+}
+#resetear-enviar #resetear:hover{
+    background-color: rgb(0,0,0);
+    color: rgb(179, 173, 173);
+}
+
 #resetear-enviar #enviar{width: 195px;
                         background-color: #ec9c24;
-                        font-weight: bold;}
+                        font-weight: bold;
+}
+#resetear-enviar #enviar:hover{
+    color: #ec9c24;
+    background-color: rgb(0,0,0);
+}
 
 /*SECCION SUSCRIPCION*/
 
@@ -137,22 +162,23 @@ hr {width: 350px; margin: auto;}
                 justify-content: space-between;
                 background-color: #ec9c24;
                 flex-wrap: wrap;
-                height: 180px;
-            }
+                height: 80px;
+}
+
 #suscribirse #ladoizquierdo{display: flex;
                             align-items: center;
                             color: rgb(255, 255, 255);
                             font-weight: bold;
                             font-size: 25px;
                             padding-left: 30px;
-                            }
+}
 
 #suscribirse #ladoizquierdo img { padding-right: 5px;}
 
 #suscribirse #ladoderecho { display: flex;
                             align-items: center;
                             padding-right: 47px;
-                            }
+}
 
 #suscribirse #ladoderecho input {
     font-size: 17px;
@@ -160,7 +186,8 @@ hr {width: 350px; margin: auto;}
     height: 50px;
     margin: 5px;
     border-radius: 15px;
-    padding-left: 10px;}   
+    padding-left: 10px;
+}   
 
 #botonsusc {
     width: 100px;
@@ -168,6 +195,12 @@ hr {width: 350px; margin: auto;}
     border-radius: 15px;
     background-color: rgb(97, 67, 67);
     color: rgb(255, 255, 255);
+}
+#botonsusc:hover {
+    color: rgb(97, 67, 67);
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(0,0,0);
 }
 
 /*DATOS DE CONTACTO*/
@@ -178,31 +211,35 @@ hr {width: 350px; margin: auto;}
                 align-items: center;
                 padding: 20px;
                 background-color: rgb(97, 67, 67);
-            }
+}
 
 #fondomarron #alladodellogo{display: flex;
-                            flex-direction: column;}
+                            flex-direction: column;
+}
                             
 #fondomarron #alladodellogo div {display: flex;
                                 justify-content: space-around;
                                 margin: 10px;
                                 width: 270px;
                                 height: 70px;
-                                }
+}
 
 #fondomarron #alladodellogo div i {font-size: 66px; color: rgb(158, 150, 150);}
 
 #fondomarron #alladodellogo div div.encolumna {display: flex; 
             flex-direction: column;
             align-items: center;
-            margin:0px;}
+            margin:0px;
+}
 
 span.letrablanca {  color: rgb(255, 255, 255);
                     font-weight: bold;
-                    font-size: 20px;}
+                    font-size: 20px;
+}
 
 span.letragris {color: rgb(105, 105, 105);
-                font-size: 12px;}
+                font-size: 12px;
+}
 
 /*DERECHOS RESERVADOS*/
 #derechosreservados{text-align: center; 
@@ -210,23 +247,33 @@ span.letragris {color: rgb(105, 105, 105);
                     color:rgb(255, 255, 255);
                     font-weight: bold;
                     padding: 1px;
-                    }
+}
 
+/*MEDIA QUERIES*/
 
-
+@media (max-width: 475px){
+    /*menu hamburguesa al lado del logo*/
+}
 
 @media (max-width: 590px){
     /*Mobile*/
+    #fondonaranja {
+        flex-direction: column;
+        background-color: rgb(50, 194, 69);
+    }
+    #suscribirse { height: 180px;}
+        
     #suscribirse #ladoderecho {
         flex-direction: column; 
         align-items: center;
         margin: auto;
     }
-    article.logofront {margin: auto;}
+    #fondomarron {flex-direction: column;}
 }
 
 @media (max-width: 1090px){
     /*Tablet y net*/
+    #suscribirse { height: 150px;}
     #suscribirse #ladoderecho {
         justify-content: center;
         margin: auto;
